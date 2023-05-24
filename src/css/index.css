@@ -5,7 +5,17 @@
 	margin: 0;
 
 	box-sizing: border-box;
-	background-color: aqua;
+}
+
+video {
+	margin-top: 80px; /* hack too keep video from being covered by nav bar */
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-height: calc(100% - 80px);
+	object-fit: cover;
 }
 
 #flag-modal {
