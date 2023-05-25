@@ -1,6 +1,10 @@
+body {
+	height: max-content;
+}
+
 #flag-modal {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	box-sizing: border-box;
 	margin: 0;
 	padding-top: 80px;
@@ -18,7 +22,7 @@
 	justify-content: space-between;
 
 	width: 100%;
-	height: 100%;
+	height: max-content;
 	box-sizing: border-box;
 	margin: 0;
 
@@ -84,4 +88,80 @@
 	color: white;
 	border: none;
 	border-radius: 2px;
+}
+
+@media screen and (min-width: 1900px) {
+	#flag-content {
+		font-family: "Roboto", sans-serif;
+	}
+
+	#flag-content:nth-child(1) > h1 {
+		font-weight: 500;
+		font-size: 4rem;
+	}
+
+	#flag-content > p {
+		font-size: 2rem;
+	}
+
+	#carou-container {
+		margin-top: 4rem;
+	}
+
+	#carou-img {
+		aspect-ratio: 2/1.3;
+		width: 40rem;
+		height: auto;
+	}
+
+	.carou-button {
+		width: 8rem;
+		aspect-ratio: 2/0.7;
+
+		border-radius: 5px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#flag-modal-inside {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	#flag-content {
+		width: calc(100% - 1rem);
+		margin: 1rem;
+		font-family: "Roboto", sans-serif;
+	}
+
+	#flag-content:nth-child(1) > h1 {
+		font-weight: 500;
+		font-size: 1.3rem;
+	}
+
+	#flag-content > p {
+		font-size: 1rem;
+	}
+
+	#carousell {
+		width: 100%;
+	}
+
+	#carou-container {
+		margin: 0;
+	}
+
+	#carou-img {
+		aspect-ratio: 2/1.3;
+		width: 80%;
+		height: auto;
+	}
+
+	.carou-button {
+		width: 8rem;
+		aspect-ratio: 2/0.7;
+
+		border-radius: 5px;
+	}
 }
