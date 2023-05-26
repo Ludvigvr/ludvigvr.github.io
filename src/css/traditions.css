@@ -14,7 +14,7 @@
 }
 
 #modal-inside {
-	backdrop-filter: grayscale(255);
+	backdrop-filter: blur(3px) grayscale(60%);
 	width: 100%;
 	height: inherit;
 
