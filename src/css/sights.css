@@ -8,7 +8,7 @@ body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	padding-top: 80px;
+	padding-top: 4.5rem;
 
 	box-sizing: border-box;
 	background-image: url(../../images/ocean.jpg),
@@ -56,7 +56,11 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-	#background-modal {
-		height: max-content;
+	#modal-inside {
+		height: inherit;
+	}
+
+	#card-holder {
+		margin-bottom: 1rem;
 	}
 }

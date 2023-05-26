@@ -3,7 +3,8 @@
 	height: 100%;
 	box-sizing: border-box;
 	margin: 0;
-	padding-top: 80px;
+	padding: 0;
+	padding-top: 4.5rem;
 
 	background-image: url(../../images/mountain.jpg),
 		linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
@@ -11,6 +12,8 @@
 	background-size: cover;
 	background-position: bottom;
 	background-blend-mode: overlay;
+
+	overflow-x: hidden;
 }
 
 #flag-modal-inside {
@@ -28,12 +31,14 @@
 #flag-content {
 	width: 50%;
 
-	margin: 1rem;
-
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
 	font-family: "Roboto", sans-serif;
+}
+
+#flag-content > * {
+	margin: 1rem;
 }
 
 #flag-content:nth-child(1) > h1 {
@@ -119,10 +124,6 @@
 }
 
 @media screen and (max-width: 500px) {
-	html {
-		overflow-y: hidden;
-	}
-
 	#flag-modal-inside {
 		display: flex;
 		flex-direction: column;
@@ -130,10 +131,7 @@
 	}
 
 	#flag-content {
-		width: calc(100% - 1rem);
-		margin: 1rem;
-		padding: 0;
-		font-family: "Roboto", sans-serif;
+		width: 100%;
 	}
 
 	#flag-content:nth-child(1) > h1 {

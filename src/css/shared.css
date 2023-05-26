@@ -52,13 +52,13 @@ a {
 
 @media screen and (max-width: 500px) {
 	body {
-		height: 100%;
-		width: 100vw;
+		height: max-content;
+		width: 100%;
 	}
 
 	.navbar {
 		width: 100vw;
-		height: 4rem;
+		height: 4.5rem;
 		margin: 0;
 		padding: 0;
 	}
