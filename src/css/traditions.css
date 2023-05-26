@@ -43,6 +43,8 @@
 	display: flex;
 	flex-direction: row;
 	width: calc(100% - 1rem);
+	max-height: 96vh;
+
 	font-family: "Roboto", sans-serif;
 
 	gap: 1rem;
@@ -66,6 +68,8 @@
 
 	display: flex;
 	flex-direction: column;
+
+	overflow-y: auto;
 }
 
 .text-card > h1 {
