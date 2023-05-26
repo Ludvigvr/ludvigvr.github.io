@@ -54,3 +54,9 @@ body {
 #card3 {
 	background-image: url(../../images/town.jpg);
 }
+
+@media screen and (max-width: 500px) {
+	#background-modal {
+		height: max-content;
+	}
+}

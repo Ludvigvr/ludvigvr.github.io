@@ -35,6 +35,10 @@
 	gap: 1rem;
 }
 
+#image-container .page-container:nth-child(2) {
+	flex-direction: row-reverse;
+}
+
 .page-container {
 	display: flex;
 	flex-direction: row;
@@ -70,4 +74,33 @@
 
 .text-card > p {
 	font-size: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+	#image-container {
+		flex-direction: column;
+		padding: 0;
+		width: 100%;
+		align-items: center;
+	}
+
+	#image-container .page-container:nth-child(2) {
+		flex-direction: column;
+	}
+
+	#modal-inside {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.page-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.text-card {
+		padding: 0.5rem;
+	}
 }
